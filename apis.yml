@@ -5,7 +5,7 @@ apis:
   - aid: alibaba:alibaba
     name: Alibaba
     tags:
-      - API
+      - Cloud
     humanURL: ' https://www.alibabacloud.com'
     properties:
       - url: ' https://www.alibabacloud.com'
