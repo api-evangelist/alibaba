@@ -1,40 +1,83 @@
 aid: alibaba
 url: >-
   https://raw.githubusercontent.com/api-evangelist/alibaba/refs/heads/main/apis.yml
+modified: '2026-04-19'
+name: Alibaba
+description: >-
+  Alibaba is a multinational technology conglomerate founded in 1999 by Jack
+  Ma, focused on e-commerce, retail, internet, and technology. The company
+  operates major online marketplaces including Taobao, Tmall, and AliExpress,
+  connecting millions of sellers with consumers globally. Alibaba Cloud
+  (Aliyun), founded in 2009, is a global leader in cloud computing and
+  artificial intelligence, serving enterprises, developers, and government
+  organizations in more than 200 countries. Alibaba Cloud provides cloud
+  computing, storage, networking, big data, AI/ML, security, and developer
+  services through a comprehensive API ecosystem. The OpenAPI Explorer provides
+  a web interface for discovering, testing, and generating SDK code for
+  hundreds of Alibaba Cloud service APIs. The company also operates Alipay
+  (digital payments), DingTalk (enterprise collaboration), and 1688 (B2B
+  wholesale).
 apis:
-  - aid: alibaba:alibaba
-    name: Alibaba
+  - aid: alibaba:alibaba-cloud-api
+    name: Alibaba Cloud API
+    description: >-
+      Alibaba Cloud provides a comprehensive API ecosystem covering all major
+      cloud services including Elastic Compute Service (ECS), Object Storage
+      Service (OSS), Container Service for Kubernetes (ACK), Relational
+      Database Service (RDS), MaxCompute (big data), Function Compute
+      (serverless), API Gateway, Content Delivery Network (CDN), and hundreds
+      of additional services. The OpenAPI Explorer provides a web interface and
+      WebCLI for calling APIs and automatically generating SDK code in Java,
+      Python, Node.js, PHP, Go, and other languages.
+    humanURL: https://api.alibabacloud.com/
+    baseURL: https://ecs.aliyuncs.com
     tags:
       - Cloud
-    humanURL: https://api.alibabacloud.com/
+      - Cloud Computing
+      - Storage
+      - Networking
+      - AI
+      - Machine Learning
+      - Big Data
+      - Serverless
     properties:
-      - url: https://api.alibabacloud.com/
-        type: Documentation
-    description: >-
-      Alibaba Cloud, founded in 2009, is a global leader in cloud computing and artificial
-      intelligence, providing services to thousands of enterprises, developers, and
-      governments organizations in more than 200 countries and regions. Committed
-      to the success of its customers, Alibaba Cloud provides reliable and secure
-      cloud computing and data processing capabilities as a part of its online solutions.
-      In January 2017, Alibaba Cloud became the official cloud services partner of
-      the Olympics.
-name: Alibaba
+      - type: Documentation
+        url: https://api.alibabacloud.com/
+      - type: OpenAPI
+        url: openapi/alibaba-openapi.yml
+common:
+  - type: Website
+    url: https://www.alibaba.com
+  - type: Website
+    url: https://www.alibabacloud.com
+  - type: Documentation
+    url: https://api.alibabacloud.com/
+  - type: Portal
+    url: https://www.alibabacloud.com/en/product/openapiexplorer
+  - type: GitHub
+    url: https://github.com/aliyun
+  - type: GitHub
+    url: https://github.com/alibabacloud-go
+  - type: SDK
+    url: https://www.alibabacloud.com/help/en/sdk/product-overview/alibaba-cloud-sdk
+  - type: Login
+    url: https://account.alibabacloud.com/login/login.htm
+  - type: SignUp
+    url: https://account.alibabacloud.com/register/intl_register.htm
+  - type: Pricing
+    url: https://www.alibabacloud.com/pricing
 tags:
   - Cloud
+  - Cloud Computing
+  - E-Commerce
   - Commerce
-type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-access: 3rd-Party
-created: '2025-01-14'
-modified: '2026-03-16'
-position: Consumer
-description: >-
-  Alibaba is a multinational conglomerate that focuses on e-commerce, retail, internet,
-  and technology. Founded in 1999 by Jack Ma, the company has grown to become one
-  of the world's largest and most valuable companies. Alibaba operates various online
-  marketplaces, such as Taobao and Tmall, where millions of sellers can connect with
-  consumers to buy and sell a wide range of products. The company also provides cloud
-  computing services, digital payment solutions, and other technology services.
+  - AI
+  - Machine Learning
+  - Big Data
+  - Storage
+  - Networking
+  - Serverless
+  - Developer Tools
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

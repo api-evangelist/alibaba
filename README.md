@@ -1,41 +1,25 @@
-# Alibaba (alibaba)
-Alibaba is a multinational conglomerate that focuses on e-commerce, retail, internet, and technology. Founded in 1999 by Jack Ma, the company has grown to become one of the world's largest and most valuable companies. Alibaba operates various online marketplaces, such as Taobao and Tmall, where millions of sellers can connect with consumers to buy and sell a wide range of products. The company also provides cloud computing services, digital payment solutions, and other technology services. In addition, Alibaba is involved in sectors such as media, entertainment, and logistics. With a mission to make it easy to do business anywhere, Alibaba plays a significant role in shaping the global digital economy.
+# Alibaba
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/alibaba/refs/heads/main/apis.yml)
+Alibaba is a multinational technology conglomerate founded in 1999 by Jack Ma, focused on e-commerce, retail, internet, and technology. The company operates major online marketplaces including Taobao, Tmall, and AliExpress, connecting millions of sellers with consumers globally.
 
-## Scope
+Alibaba Cloud (Aliyun), founded in 2009, is a global leader in cloud computing and artificial intelligence, serving enterprises, developers, and government organizations in more than 200 countries. Alibaba Cloud became the official cloud services partner of the Olympics in January 2017.
 
-- **Type:** Index 
-- **Position:** Consuming 
-- **Access:** 3rd-Party 
-
-## Tags:
-
- - Cloud, Commerce
-
-## Timestamps
-
-- **Created:** 2025-01-14 
-- **Modified:** 2026-03-16 
+Alibaba Cloud provides cloud computing, storage, networking, big data, AI/ML, security, and developer services through a comprehensive API ecosystem. The OpenAPI Explorer provides a web interface and WebCLI for discovering, testing, and generating SDK code for hundreds of Alibaba Cloud service APIs across Java, Python, Node.js, PHP, Go, and other languages.
 
 ## APIs
 
-### Alibaba
-Alibaba Cloud, founded in 2009, is a global leader in cloud computing and artificial intelligence, providing services to thousands of enterprises, developers, and governments organizations in more than 200 countries and regions. Committed to the success of its customers, Alibaba Cloud provides reliable and secure cloud computing and data processing capabilities as a part of its online solutions. In January 2017, Alibaba Cloud became the official cloud services partner of the Olympics. 
+- **[Alibaba Cloud API](https://api.alibabacloud.com/)** - Comprehensive cloud services API covering ECS, OSS, ACK, RDS, MaxCompute, Function Compute, API Gateway, CDN, and hundreds of additional services
 
-**Human URL:** [https://api.alibabacloud.com/](https://api.alibabacloud.com/)
+## OpenAPI Specs
 
+- `openapi/alibaba-openapi.yml` - Alibaba Cloud API specification
 
-#### Tags:
+## Links
 
- - Cloud
-
-#### Properties
-
-- [Documentation](https://api.alibabacloud.com/)
-
-## Maintainers
-
-**FN:** Kin Lane
-
-**Email:** kin@apievangelist.com
+- [Alibaba.com](https://www.alibaba.com)
+- [Alibaba Cloud](https://www.alibabacloud.com)
+- [OpenAPI Explorer](https://www.alibabacloud.com/en/product/openapiexplorer)
+- [API Documentation](https://api.alibabacloud.com/)
+- [SDK Documentation](https://www.alibabacloud.com/help/en/sdk/product-overview/alibaba-cloud-sdk)
+- [GitHub - Aliyun](https://github.com/aliyun)
+- [GitHub - Alibaba Cloud Go SDK](https://github.com/alibabacloud-go)
