@@ -1,0 +1,37 @@
+generated: '2026-06-20'
+method: searched
+source: >-
+  Derived from /.well-known/ discovery probes (see well-known/alibaba-well-known.yml)
+  and Alibaba Cloud public API documentation. No OpenAPI is captured in this repo
+  (openapi/alibaba-openapi.yml is empty), so schema-level conformance could not be
+  computed.
+standards:
+  - id: oauth2
+    conforms: false
+    evidence: >-
+      Alibaba Cloud APIs authenticate with AccessKey ID/Secret HMAC request
+      signing, not OAuth2 bearer tokens.
+  - id: oidc
+    conforms: false
+    evidence: >-
+      No /.well-known/openid-configuration document served (probe returned a
+      soft-404 SPA HTML fallback, not OIDC discovery metadata).
+  - id: rfc8414-oauth-authorization-server
+    conforms: false
+    evidence: No /.well-known/oauth-authorization-server metadata document served.
+  - id: rfc9116-security-txt
+    conforms: false
+    evidence: No /.well-known/security.txt published on the API host.
+  - id: rfc9727-api-catalog
+    conforms: false
+    evidence: No /.well-known/api-catalog document served.
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: >-
+      Alibaba Cloud uses a proprietary error envelope (Code, Message, RequestId,
+      HostId), not application/problem+json.
+  - id: openapi
+    conforms: true
+    evidence: >-
+      Alibaba Cloud publishes machine-readable API metadata via OpenAPI Explorer
+      and generates OpenAPI-based SDKs (darabonba/tea-openapi toolchain).

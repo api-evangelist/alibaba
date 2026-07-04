@@ -1,0 +1,27 @@
+generated: '2026-06-20'
+method: searched
+source: >-
+  Alibaba Cloud OpenAPI documentation (api-version reference) and Support
+  Service Health Dashboard.
+versioning:
+  scheme: version-date
+  note: >-
+    Each Alibaba Cloud service API carries a dated version string (e.g. ECS
+    2014-05-26) passed as the Version request parameter; the OpenAPI Explorer
+    lets callers view and select an API version per service.
+  docs: https://www.alibabacloud.com/help/en/openapi/api-version
+deprecation:
+  policy_url: null
+  sunset_header: false
+  note: >-
+    No published RFC 8594 Sunset/Deprecation header policy found. Deprecated
+    operations could not be derived because no OpenAPI is captured in this repo.
+sla:
+  url: https://www.alibabacloud.com/help/en/support/latest/support-plan-service-health-dashboard
+  uptime_target: null
+  note: >-
+    SLA commitments are per cloud product; consult each service's individual SLA
+    document.
+status_page: https://status.alibabacloud.com/
+status_dashboard: https://www.alibabacloud.com/help/en/support/latest/support-plan-service-health-dashboard
+deprecated_operations: []

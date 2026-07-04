@@ -1,0 +1,84 @@
+generated: '2026-06-20'
+method: searched
+source: >-
+  Verified present on npm, PyPI, pkg.go.dev, Packagist, NuGet, and Maven Central
+  under the official aliyun / alibabacloud / alicloud namespaces.
+packages:
+  - language: javascript
+    registry: npm
+    name: "@alicloud/pop-core"
+    url: https://www.npmjs.com/package/@alicloud/pop-core
+    install: npm install @alicloud/pop-core
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@alicloud/openapi-client"
+    url: https://www.npmjs.com/package/@alicloud/openapi-client
+    install: npm install @alicloud/openapi-client
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@alicloud/tea-util"
+    url: https://www.npmjs.com/package/@alicloud/tea-util
+    install: npm install @alicloud/tea-util
+    official: true
+  - language: python
+    registry: pypi
+    name: aliyun-python-sdk-core
+    url: https://pypi.org/project/aliyun-python-sdk-core/
+    install: pip install aliyun-python-sdk-core
+    official: true
+  - language: python
+    registry: pypi
+    name: alibabacloud-tea-openapi
+    url: https://pypi.org/project/alibabacloud-tea-openapi/
+    install: pip install alibabacloud-tea-openapi
+    official: true
+  - language: python
+    registry: pypi
+    name: aliyun-python-sdk-ecs
+    url: https://pypi.org/project/aliyun-python-sdk-ecs/
+    install: pip install aliyun-python-sdk-ecs
+    official: true
+  - language: go
+    registry: pkg.go.dev
+    name: github.com/aliyun/alibaba-cloud-sdk-go
+    url: https://pkg.go.dev/github.com/aliyun/alibaba-cloud-sdk-go
+    install: go get github.com/aliyun/alibaba-cloud-sdk-go
+    official: true
+  - language: go
+    registry: pkg.go.dev
+    name: github.com/alibabacloud-go/darabonba-openapi
+    url: https://pkg.go.dev/github.com/alibabacloud-go/darabonba-openapi
+    install: go get github.com/alibabacloud-go/darabonba-openapi
+    official: true
+  - language: php
+    registry: packagist
+    name: alibabacloud/sdk
+    url: https://packagist.org/packages/alibabacloud/sdk
+    install: composer require alibabacloud/sdk
+    official: true
+  - language: php
+    registry: packagist
+    name: alibabacloud/darabonba-openapi
+    url: https://packagist.org/packages/alibabacloud/darabonba-openapi
+    install: composer require alibabacloud/darabonba-openapi
+    official: true
+  - language: dotnet
+    registry: nuget
+    name: aliyun-net-sdk-core
+    url: https://www.nuget.org/packages/aliyun-net-sdk-core/
+    install: dotnet add package aliyun-net-sdk-core
+    official: true
+  - language: java
+    registry: maven-central
+    name: com.aliyun:aliyun-java-sdk-core
+    url: https://central.sonatype.com/artifact/com.aliyun/aliyun-java-sdk-core
+    install: "implementation 'com.aliyun:aliyun-java-sdk-core'"
+    official: true
+  - language: java
+    registry: maven-central
+    name: com.aliyun:tea-openapi
+    url: https://central.sonatype.com/artifact/com.aliyun/tea-openapi
+    install: "implementation 'com.aliyun:tea-openapi'"
+    official: true

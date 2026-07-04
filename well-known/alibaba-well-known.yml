@@ -1,0 +1,54 @@
+generated: '2026-06-20'
+method: searched
+source: >-
+  Probed the /.well-known/ discovery surface on each Alibaba host in apis.yml.
+  No genuine well-known documents were found. api.alibabacloud.com returns
+  HTTP 200 for every /.well-known/ path but serves an identical 12,304-byte SPA
+  HTML fallback (soft-404, content-type text/html), not a real document. The
+  aliyuncs.com API host rejects unsigned requests (HTTP 400) and the marketing
+  hosts redirect (HTTP 302). No raw files were saved because none of the probes
+  returned an authentic well-known artifact.
+hosts:
+  - host: https://api.alibabacloud.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        note: soft-404 SPA HTML fallback, not a real security.txt
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 200
+        note: soft-404 SPA HTML fallback, not OIDC discovery
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 200
+        note: soft-404 SPA HTML fallback, not RFC 8414 metadata
+        file: null
+      - path: /.well-known/api-catalog
+        status: 200
+        note: soft-404 SPA HTML fallback, not RFC 9727 api-catalog
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 200
+        note: soft-404 SPA HTML fallback, not an ai-plugin manifest
+        file: null
+  - host: https://ecs.aliyuncs.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 400
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 400
+        file: null
+  - host: https://www.alibabacloud.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 302
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 302
+        file: null
+  - host: https://www.alibaba.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 302
+        file: null

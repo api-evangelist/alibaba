@@ -1,7 +1,7 @@
 aid: alibaba
 url: >-
   https://raw.githubusercontent.com/api-evangelist/alibaba/refs/heads/main/apis.yml
-modified: '2026-04-19'
+modified: '2026-06-20'
 name: Alibaba
 description: >-
   Alibaba is a multinational technology conglomerate founded in 1999 by Jack
@@ -66,6 +66,20 @@ common:
     url: https://account.alibabacloud.com/register/intl_register.htm
   - type: Pricing
     url: https://www.alibabacloud.com/pricing
+  - url: https://www.alizila.com/feed/
+    type: Blog
+  - type: Packages
+    url: packages/alibaba-packages.yml
+  - type: WellKnown
+    url: well-known/alibaba-well-known.yml
+  - type: MCPServer
+    url: mcp/alibaba-mcp.yml
+  - type: LLMsTxt
+    url: llms/alibaba-llms.txt
+  - type: Conformance
+    url: conformance/alibaba-conformance.yml
+  - type: Lifecycle
+    url: lifecycle/alibaba-lifecycle.yml
 tags:
   - Cloud
   - Cloud Computing

@@ -1,0 +1,41 @@
+generated: '2026-06-20'
+method: searched
+status: published
+source: https://github.com/aliyun/alibabacloud-api-mcp-server
+server:
+  name: Alibaba Cloud OpenAPI MCP Server
+  transport: sse
+  repo: https://github.com/aliyun/alibabacloud-api-mcp-server
+  run: uvx alibabacloud.mcp-proxy@latest
+  description: >-
+    Official Alibaba Cloud MCP server (aliyun GitHub org) that fronts tens of
+    thousands of Alibaba Cloud OpenAPIs through a small set of core tools plus a
+    catalog of system MCP services. Supports SSE and Streamable HTTP transports,
+    a remote (web console) mode, and a local proxy mode. Authentication uses
+    Alibaba Cloud AccessKey credentials.
+related_servers:
+  - name: Alibaba Cloud Ops MCP Server
+    repo: https://github.com/aliyun/alibaba-cloud-ops-mcp-server
+    description: >-
+      Operates Alibaba Cloud resources across ECS, CloudMonitor, OOS, OSS, VPC,
+      and RDS.
+  - name: Alibaba Cloud DataWorks MCP Server
+    repo: https://github.com/aliyun/alibabacloud-dataworks-mcp-server
+    description: Wraps the DataWorks Open API for AI agents.
+tools:
+  - name: terraform_provider
+    description: >-
+      Provides Alibaba Cloud Terraform Provider metadata with online validation
+      and runtime capabilities.
+  - name: quota_center
+    description: Query general quota information for products supported by the Quota Center.
+  - name: resource_search
+    description: Search and statistics functions for resources the caller has permission to see.
+  - name: actiontrail_ai
+    description: Uses AI to flexibly call the ActionTrail LookupEvents interface.
+  - name: permission_diagnostics
+    description: Perform permission diagnosis via EncodedDiagnosticMessage.
+  - name: governance_report
+    description: Service based on GovernanceReport.
+  - name: config_compliance_pack
+    description: Query compliance pack templates and enable specified compliance packs.
