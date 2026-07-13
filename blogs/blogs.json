@@ -1,8 +1,14 @@
 {
   "repo": "alibaba",
   "feeds": [
-    { "source": "https://www.alizila.com/feed/", "feed_url": "https://www.alizila.com/feed/", "title": "Alizila", "saved": 10 }
+    {
+      "source": "https://www.alizila.com/feed/",
+      "feed_url": "https://www.alizila.com/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    }
   ],
-  "fetched": "2026-07-04T13:37:50Z",
-  "post_count": 10
+  "fetched": "2026-07-11T11:50:51Z",
+  "post_count": 14
 }
