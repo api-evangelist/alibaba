@@ -48,6 +48,15 @@ apis:
       - Cloud Computing
       - Storage
       - Networking
+      - Artificial Intelligence
+      - Machine-Learning
+      - Big Data
+      - Serverless
+    tags_raw:
+      - Cloud
+      - Cloud Computing
+      - Storage
+      - Networking
       - AI
       - Machine Learning
       - Big Data
@@ -95,6 +104,18 @@ common:
   - type: Lifecycle
     url: lifecycle/alibaba-lifecycle.yml
 tags:
+  - Cloud
+  - Cloud Computing
+  - E-Commerce
+  - Commerce
+  - Artificial Intelligence
+  - Machine-Learning
+  - Big Data
+  - Storage
+  - Networking
+  - Serverless
+  - Developer Tools
+tags_raw:
   - Cloud
   - Cloud Computing
   - E-Commerce
