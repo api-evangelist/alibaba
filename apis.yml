@@ -60,7 +60,7 @@ apis:
       - Storage
       - Networking
       - Artificial Intelligence
-      - Machine-Learning
+      - Machine Learning
       - Big Data
       - Serverless
     tags_raw:
@@ -72,6 +72,7 @@ apis:
       - Machine Learning
       - Big Data
       - Serverless
+      - Machine-Learning
     properties:
       - type: Documentation
         url: https://api.alibabacloud.com/
@@ -120,7 +121,7 @@ tags:
   - E-Commerce
   - Commerce
   - Artificial Intelligence
-  - Machine-Learning
+  - Machine Learning
   - Big Data
   - Storage
   - Networking
@@ -138,6 +139,7 @@ tags_raw:
   - Networking
   - Serverless
   - Developer Tools
+  - Machine-Learning
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
