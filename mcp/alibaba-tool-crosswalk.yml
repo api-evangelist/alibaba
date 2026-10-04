@@ -1,0 +1,39 @@
+generated: '2026-10-03'
+method: derived
+source: derived from alibaba-mcp.yml and OpenAPI spec
+crosswalk:
+  - tool: terraform_provider
+    category: infrastructure
+    rest: []
+    binding: none
+    confidence: low
+  - tool: quota_center
+    category: quota
+    rest: []
+    binding: none
+    confidence: low
+  - tool: resource_search
+    category: search
+    rest: []
+    binding: none
+    confidence: low
+  - tool: actiontrail_ai
+    category: ai
+    rest: []
+    binding: none
+    confidence: low
+  - tool: permission_diagnostics
+    category: diagnostics
+    rest: []
+    binding: none
+    confidence: low
+  - tool: governance_report
+    category: governance
+    rest: []
+    binding: none
+    confidence: low
+  - tool: config_compliance_pack
+    category: compliance
+    rest: []
+    binding: none
+    confidence: low

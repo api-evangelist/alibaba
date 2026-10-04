@@ -1,0 +1,25 @@
+generated: '2026-10-03'
+method: probed
+source: https://www.alibabagroup.com/en-US/privacy-policy
+signals:
+  data_subject_request:
+    evidence:
+      - source: https://www.alibabagroup.com/en-US/privacy-policy
+        http_status: 200
+        fetched: "true"
+        quote: "If you need to exercise any of your rights, please contact us at data-protection@service.alibaba.com , and we will respond to your request in accordance with the requirements of the applicable laws and regulations."
+    note: Provides mechanism for data subject to request access, correction, deletion.
+  subprocessors:
+    evidence:
+      - source: https://www.alibabagroup.com/en-US/privacy-policy
+        http_status: 200
+        fetched: "true"
+        quote: "We may share your personal information with our affiliates when we, at your request, render services, or respond to or process your inquiries, or help resolve your problems; provided that we will only share personal information that is necessary, subject to the purposes stated in this Privacy Policy."
+    note: Indicates sharing with affiliates/sub‑processors.
+  data_retention:
+    evidence:
+      - source: https://www.alibabagroup.com/en-US/privacy-policy
+        http_status: 200
+        fetched: "true"
+        quote: "We will only retain your personal information for as long as necessary to achieve the purposes described in this Privacy Policy, unless there is a mandatory retention requirement by law."
+    note: States retention period policy.

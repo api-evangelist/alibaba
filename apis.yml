@@ -1,4 +1,5 @@
 aid: alibaba
+
 deliveryModel:
   model: saas
   open_source: false
@@ -10,6 +11,7 @@ deliveryModel:
   - pricing
   generated: '2026-08-28'
   method: derived
+
 accessModel:
   pricing: unknown
   onboarding: unknown
@@ -21,11 +23,16 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/alibaba.png
+
 url: >-
   https://raw.githubusercontent.com/api-evangelist/alibaba/refs/heads/main/apis.yml
+
 modified: '2026-06-20'
+
 name: Alibaba
+
 description: >-
   Alibaba is a multinational technology conglomerate founded in 1999 by Jack
   Ma, focused on e-commerce, retail, internet, and technology. The company
@@ -40,6 +47,74 @@ description: >-
   hundreds of Alibaba Cloud service APIs. The company also operates Alipay
   (digital payments), DingTalk (enterprise collaboration), and 1688 (B2B
   wholesale).
+
+tags:
+  - Cloud
+  - Cloud Computing
+  - E-Commerce
+  - Commerce
+  - Artificial Intelligence
+  - Machine Learning
+  - Big Data
+  - Storage
+  - Networking
+  - Serverless
+  - Developer Tools
+
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
+
+specificationVersion: '0.23'
+
+common:
+  - type: StatusPage
+    url: https://status.alibabacloud.com/
+  - type: Overlay
+    url: overlays/alibaba-openapi-overlay.yml
+  - type: ToolCrosswalk
+    url: mcp/alibaba-tool-crosswalk.yml
+  - type: Hosts
+    url: hosts/alibaba-hosts.yml
+  - type: Vendors
+    url: vendors/alibaba-vendors.yml
+  - type: SDKs
+    url: packages/alibaba-packages.yml
+  - type: DomainSecurity
+    url: security/alibaba-domain-security.yml
+  - type: Website
+    url: https://www.alibaba.com
+  - type: Website
+    url: https://www.alibabacloud.com
+  - type: Documentation
+    url: https://api.alibabacloud.com/
+  - type: Portal
+    url: https://www.alibabacloud.com/en/product/openapiexplorer
+  - type: GitHub
+    url: https://github.com/aliyun
+  - type: GitHub
+    url: https://github.com/alibabacloud-go
+  - type: SDK
+    url: https://www.alibabacloud.com/help/en/sdk/product-overview/alibaba-cloud-sdk
+  - type: Login
+    url: https://account.alibabacloud.com/login/login.htm
+  - type: SignUp
+    url: https://account.alibabacloud.com/register/intl_register.htm
+  - type: Pricing
+    url: https://www.alibabacloud.com/pricing
+  - url: https://www.alizila.com/feed/
+    type: Blog
+  - type: Packages
+    url: packages/alibaba-packages.yml
+  - type: WellKnown
+    url: well-known/alibaba-well-known.yml
+  - type: MCPServer
+    url: mcp/alibaba-mcp.yml
+  - type: Conformance
+    url: conformance/alibaba-conformance.yml
+  - type: Lifecycle
+    url: lifecycle/alibaba-lifecycle.yml
+
 apis:
   - aid: alibaba:alibaba-cloud-api
     name: Alibaba Cloud API
@@ -76,57 +151,7 @@ apis:
     properties:
       - type: Documentation
         url: https://api.alibabacloud.com/
-      - type: OpenAPI
-        url: openapi/alibaba-openapi.yml
-common:
-  - type: DomainSecurity
-    url: security/alibaba-domain-security.yml
-  - type: Website
-    url: https://www.alibaba.com
-  - type: Website
-    url: https://www.alibabacloud.com
-  - type: Documentation
-    url: https://api.alibabacloud.com/
-  - type: Portal
-    url: https://www.alibabacloud.com/en/product/openapiexplorer
-  - type: GitHub
-    url: https://github.com/aliyun
-  - type: GitHub
-    url: https://github.com/alibabacloud-go
-  - type: SDK
-    url: https://www.alibabacloud.com/help/en/sdk/product-overview/alibaba-cloud-sdk
-  - type: Login
-    url: https://account.alibabacloud.com/login/login.htm
-  - type: SignUp
-    url: https://account.alibabacloud.com/register/intl_register.htm
-  - type: Pricing
-    url: https://www.alibabacloud.com/pricing
-  - url: https://www.alizila.com/feed/
-    type: Blog
-  - type: Packages
-    url: packages/alibaba-packages.yml
-  - type: WellKnown
-    url: well-known/alibaba-well-known.yml
-  - type: MCPServer
-    url: mcp/alibaba-mcp.yml
-  - type: LLMsTxt
-    url: llms/alibaba-llms.txt
-  - type: Conformance
-    url: conformance/alibaba-conformance.yml
-  - type: Lifecycle
-    url: lifecycle/alibaba-lifecycle.yml
-tags:
-  - Cloud
-  - Cloud Computing
-  - E-Commerce
-  - Commerce
-  - Artificial Intelligence
-  - Machine Learning
-  - Big Data
-  - Storage
-  - Networking
-  - Serverless
-  - Developer Tools
+
 tags_raw:
   - Cloud
   - Cloud Computing
@@ -140,7 +165,21 @@ tags_raw:
   - Serverless
   - Developer Tools
   - Machine-Learning
-maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
-specificationVersion: '0.23'
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  method: derived
+  generated: '2026-10-03'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes developer documentation but serves no machine-readable contract from it
+  evidence:
+  - url: https://www.alibaba.com
+    status: 200
+x-enrichment:
+  date: '2026-10-03'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

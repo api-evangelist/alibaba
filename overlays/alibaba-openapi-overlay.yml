@@ -1,0 +1,9 @@
+generated: '2026-10-03'
+method: derived
+source: openapi/alibaba-openapi.json
+overlay:
+  version: '1.0.0'
+  actions:
+    - op: add
+      path: /info/x-generated-by
+      value: Alibaba API Evangelist
