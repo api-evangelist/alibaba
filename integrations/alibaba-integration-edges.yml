@@ -7,6 +7,9 @@ checked:
 - https://composio.dev/toolkits/alibaba
 - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json
 - https://github.com/Portkey-AI/gateway/tree/main/src/providers
+- https://github.com/kubeflow/website
+- https://github.com/lfai/landscape
+- https://github.com/mlcommons
 - https://github.com/run-llama/llama_index/tree/main/llama-index-integrations
 - https://monid.ai/tools/alibaba
 - https://n8n.io/integrations/alibaba/
@@ -20,6 +23,17 @@ marketplace_apps:
   url: https://monid.ai/tools/alibaba
   identity: slug
 edges:
+- partner_name: 17track
+  partner: 17track
+  partner_match: aggregator
+  channel: partner-built
+  direction: partner-built
+  type: contract
+  relationship: carrier-coverage
+  evidence: https://res.17track.net/asset/carrier/info/apicarrier.all.json
+  detected_by: detect-carrier-edges.py
+  first_seen: '2026-10-13'
+  matched_by: domain:alibaba.com
 - partner_name: OpenRouter
   partner: openrouter
   partner_match: router
@@ -52,7 +66,7 @@ edges:
   - provider
   router_signals:
     provider:
-      models: 47
+      models: 58
       router_ids:
       - dashscope
       tools_share: 1.0
@@ -98,17 +112,6 @@ edges:
   matched_by: verified-token-table
   detected_by: sweep-model-routing.py
   first_seen: '2026-10-13'
-- partner_name: 17track
-  partner: 17track
-  partner_match: aggregator
-  channel: partner-built
-  direction: partner-built
-  type: contract
-  relationship: carrier-coverage
-  evidence: https://res.17track.net/asset/carrier/info/apicarrier.all.json
-  detected_by: detect-carrier-edges.py
-  first_seen: '2026-10-13'
-  matched_by: domain:alibaba.com
 - partner_name: LlamaIndex
   partner: llamaindex
   partner_match: framework
@@ -145,5 +148,46 @@ edges:
     vendor_domain: alibaba.com
   matched_by: verified-domain-table
   detected_by: sweep-rag-vector.py
+  first_seen: '2026-10-15'
+- partner_name: MLCommons MLPerf
+  partner: mlcommons
+  partner_match: register
+  type: register
+  direction: partner-built
+  category: ML benchmark results
+  evidence: https://github.com/mlcommons/inference_results_v2.1/tree/main/closed/Alibaba
+  channel: standard-directory
+  relationship: standard-participant
+  contract_reference:
+    register: MLCommons MLPerf results (github.com/mlcommons/<family>_results_v<round>, closed/ + open/ submitter
+      directories)
+    spec_file: null
+    standard: MLPerf (MLCommons)
+    role: mlperf-submitter (lapsed)
+    registered_name: Alibaba
+    register_directories:
+    - Alibaba
+    matched_domain: alibaba.com
+    matched_by: domain
+    identity_source: wikidata Q1359568 'Alibaba Group' P856 https://www.alibaba.com/
+    identity_note: 'MLPerf publishes names only: domain from Wikidata P856 (labelled lookup, Kin 2026-10-15 decision
+      1), then partner_link (domain + name check)'
+    certified_products:
+    - product: MLPerf Inference (closed division)
+      newest_round: v2.1
+      lapsed: true
+    - product: MLPerf Training (closed division)
+      newest_round: v0.7
+      lapsed: true
+    open_division_only:
+    - family: tiny
+      newest_round: v0.7
+    current_window: each family's newest 2 rounds
+    signal_note: certified_products = one entry per benchmark FAMILY with a closed-division (peer-reviewed, reference-rules)
+      result, lapsed outside the current window; open-division families, rounds and result counts are context, never
+      read
+    detected_by: sweep-mlops.py
+    detected: '2026-10-15'
+  detected_by: sweep-mlops.py
   first_seen: '2026-10-15'
 templates: []
