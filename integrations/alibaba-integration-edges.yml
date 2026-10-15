@@ -7,6 +7,7 @@ checked:
 - https://composio.dev/toolkits/alibaba
 - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json
 - https://github.com/Portkey-AI/gateway/tree/main/src/providers
+- https://github.com/run-llama/llama_index/tree/main/llama-index-integrations
 - https://monid.ai/tools/alibaba
 - https://n8n.io/integrations/alibaba/
 - https://openrouter.ai/api/v1/models
@@ -108,4 +109,41 @@ edges:
   detected_by: detect-carrier-edges.py
   first_seen: '2026-10-13'
   matched_by: domain:alibaba.com
+- partner_name: LlamaIndex
+  partner: llamaindex
+  partner_match: framework
+  channel: partner-built
+  direction: partner-built
+  type: coverage
+  relationship: system-coverage
+  evidence: https://github.com/run-llama/llama_index/tree/main/llama-index-integrations/vector_stores/llama-index-vector-stores-alibabacloud-mysql
+  coverage_role:
+  - embeddings
+  - reranker
+  - retrieval-reader
+  - vector-store
+  framework_signals:
+    packages:
+    - llama-index-embeddings-alibabacloud-aisearch
+    - llama-index-embeddings-dashscope
+    - llama-index-postprocessor-alibabacloud-aisearch-rerank
+    - llama-index-postprocessor-dashscope-rerank
+    - llama-index-readers-dashvector
+    - llama-index-vector-stores-alibabacloud-mysql
+    - llama-index-vector-stores-alibabacloud-opensearch
+    - llama-index-vector-stores-analyticdb
+    - llama-index-vector-stores-dashvector
+    - llama-index-vector-stores-hologres
+    - llama-index-vector-stores-lindorm
+    - llama-index-vector-stores-tablestore
+    - llama-index-vector-stores-tair
+    roles:
+    - embeddings
+    - reranker
+    - retrieval-reader
+    - vector-store
+    vendor_domain: alibaba.com
+  matched_by: verified-domain-table
+  detected_by: sweep-rag-vector.py
+  first_seen: '2026-10-15'
 templates: []
