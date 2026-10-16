@@ -2,16 +2,16 @@
 kin_checks:
   slug: alibaba
   schema_version: 0.23.0
-  scored_at: '2026-10-03'
-  run_ts: 2026-10-03T024842
+  scored_at: '2026-10-11'
+  run_ts: 2026-10-11T110117
   note: Actionable checks (missed + partial) in `checks`, plus the ids that did not
     apply in `na`. Everything else in rubric/scoring-0.23.0.yml was earned; counts
     below let you verify that.
   counts:
     total: 153
     earned: 19
-    partial: 3
-    missed: 88
+    partial: 2
+    missed: 89
     na: 43
   checks:
   - id: newsroom_present
@@ -23,6 +23,8 @@ kin_checks:
   - id: well_known_published
     status: missed
   - id: apis_json_self_hosted
+    status: missed
+  - id: contract_present
     status: missed
   - id: servers_resolvable
     status: missed
@@ -55,8 +57,6 @@ kin_checks:
   - id: overlay_published
     status: missed
   - id: change_log_present
-    status: missed
-  - id: status_page_present
     status: missed
   - id: rate_limits_documented
     status: missed
@@ -157,6 +157,8 @@ kin_checks:
     status: missed
   - id: upsert_declared_conflict
     status: missed
+  - id: spec_presence
+    status: missed
   - id: agentic_access
     status: missed
   - id: reversibility_documented
@@ -194,9 +196,6 @@ kin_checks:
   - id: mcp_endpoint_discoverable
     status: partial
     earned: 2.0
-  - id: contract_present
-    status: partial
-    earned: 18.0
   - id: mcp_server
     status: partial
     earned: 4.8
