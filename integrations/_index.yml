@@ -14,50 +14,6 @@
   relationship: carrier-coverage
   status: not-a-workflow
   arazzo: null
-- slug: alibaba-openrouter
-  label: OpenRouter
-  partner: openrouter
-  partner_name: OpenRouter
-  type: coverage
-  channel: partner-built
-  evidence: https://openrouter.ai/api/v1/models
-  source: edge
-  relationship: system-coverage
-  status: not-a-workflow
-  arazzo: null
-- slug: alibaba-litellm
-  label: LiteLLM
-  partner: litellm
-  partner_name: LiteLLM
-  type: coverage
-  channel: partner-built
-  evidence: https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json
-  source: edge
-  relationship: system-coverage
-  status: not-a-workflow
-  arazzo: null
-- slug: alibaba-llm-gateway
-  label: LLM Gateway
-  partner: llmgateway-io
-  partner_name: LLM Gateway
-  type: coverage
-  channel: partner-built
-  evidence: https://api.llmgateway.io/v1/models
-  source: edge
-  relationship: system-coverage
-  status: not-a-workflow
-  arazzo: null
-- slug: alibaba-portkey
-  label: Portkey
-  partner: portkey
-  partner_name: Portkey
-  type: coverage
-  channel: partner-built
-  evidence: https://github.com/Portkey-AI/gateway/tree/main/src/providers/dashscope
-  source: edge
-  relationship: system-coverage
-  status: not-a-workflow
-  arazzo: null
 - slug: alibaba-llamaindex
   label: LlamaIndex
   partner: llamaindex
@@ -108,6 +64,63 @@
       result, lapsed outside the current window; open-division families, rounds and result counts are context, never
       read
     detected_by: sweep-mlops.py
-    detected: '2026-10-15'
+    detected: '2026-10-19'
+  status: not-a-workflow
+  arazzo: null
+- slug: alibaba-openrouter
+  label: OpenRouter
+  partner: openrouter
+  partner_name: OpenRouter
+  type: coverage
+  channel: partner-built
+  evidence: https://openrouter.ai/api/v1/models
+  source: edge
+  relationship: system-coverage
+  status: not-a-workflow
+  arazzo: null
+- slug: alibaba-litellm
+  label: LiteLLM
+  partner: litellm
+  partner_name: LiteLLM
+  type: coverage
+  channel: partner-built
+  evidence: https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json
+  source: edge
+  relationship: system-coverage
+  status: not-a-workflow
+  arazzo: null
+- slug: alibaba-llm-gateway
+  label: LLM Gateway
+  partner: llmgateway-io
+  partner_name: LLM Gateway
+  type: coverage
+  channel: partner-built
+  evidence: https://api.llmgateway.io/v1/models
+  source: edge
+  relationship: system-coverage
+  status: not-a-workflow
+  arazzo: null
+- slug: alibaba-portkey
+  label: Portkey
+  partner: portkey
+  partner_name: Portkey
+  type: coverage
+  channel: partner-built
+  evidence: https://github.com/Portkey-AI/gateway/tree/main/src/providers/dashscope
+  source: edge
+  relationship: system-coverage
+  status: not-a-workflow
+  arazzo: null
+- slug: alibaba-bigcommerce-own
+  label: BigCommerce (own)
+  partner: bigcommerce
+  partner_name: BigCommerce (own)
+  category: Product Sourcing, Product Sourcing
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://www.bigcommerce.com/apps/dropshipping-on-alibaba-com/
+  source: edge
+  relationship: platform-app
   status: not-a-workflow
   arazzo: null
