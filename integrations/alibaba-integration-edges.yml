@@ -24,6 +24,7 @@ checked:
 - https://github.com/marketplace?type=apps
 - https://github.com/partners/technology-partners
 - https://partner.github.com/
+- wix/integrations/wix-integration-edges.yml
 summary: null
 marketplace_apps:
 - marketplace: monid
@@ -199,23 +200,6 @@ edges:
   matched_by: verified-token-table
   detected_by: sweep-model-routing.py
   first_seen: '2026-10-13'
-- partner_name: BigCommerce (own)
-  partner: bigcommerce
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: own
-  evidence: https://www.bigcommerce.com/apps/dropshipping-on-alibaba-com/
-  mirror_of: bigcommerce/integrations/bigcommerce-integration-edges.yml
-  apps:
-  - DropShipping on Alibaba.com
-  listing_count: 1
-  detected: '2026-10-20'
-  detected_by: mirror-platform-listings.py
-  category: Product Sourcing, Product Sourcing
 - partner_name: GitHub secret scanning partner program
   partner: github
   partner_match: register-name
@@ -250,4 +234,41 @@ edges:
       P856 not contradicting (Kin 2026-10-20 decision 2)
   detected_by: sweep-github-marketplace.py
   first_seen: '2026-10-21'
+- partner_name: BigCommerce (own)
+  partner: bigcommerce
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.bigcommerce.com/apps/dropshipping-on-alibaba-com/
+  mirror_of: bigcommerce/integrations/bigcommerce-integration-edges.yml
+  apps:
+  - DropShipping on Alibaba.com
+  listing_count: 1
+  detected: '2026-10-20'
+  detected_by: mirror-platform-listings.py
+  category: Product Sourcing, Product Sourcing
+- partner_name: Wix (own)
+  partner: wix
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.wix.com/app-market/developer/alibaba
+  mirror_of: wix/integrations/wix-integration-edges.yml
+  apps:
+  - 'Alibaba.com: Source Globally'
+  - 'Alibaba.com: Sell Globally'
+  listing_count: 1
+  detected: '2026-10-22'
+  detected_by: mirror-platform-listings.py
+  category: Stores
+  publisher_verified:
+  - Verified by Wix
 templates: []
