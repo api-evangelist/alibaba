@@ -172,3 +172,71 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
+- slug: alibaba-cve-program-cve-numbering-authorities
+  label: CVE Program (CVE Numbering Authorities)
+  partner_name: CVE Program (CVE Numbering Authorities)
+  category: Vulnerability disclosure (CVE Numbering Authority)
+  type: register
+  channel: standard-directory
+  evidence: https://www.cve.org/PartnerInformation/ListofPartners/partner/alibaba
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: CVE Program CNA list (github.com/CVEProject/cve-website CNAsList.json @ 239d3d9b68e0)
+    standard: CVE Program CNA Operational Rules (CVE Numbering Authority)
+    spec_file: null
+    role: cve-numbering-authority
+    registered_name: Alibaba, Inc.
+    matched_domain: alibaba.com
+    matched_by: domain
+    cna_id: CNA-2017-0024
+    cna_short_name: alibaba
+    cna_types:
+    - Vendor
+    - Open Source
+    cna_roles:
+    - CNA
+    scope: Projects listed on its <a href='https://github.com/alibaba' target='_blank'>Alibaba GitHub website</a>
+      only.
+    top_level_root: MITRE Corporation
+    root: n/a
+    security_advisories:
+    - https://security.alibaba.com/announcement.htm
+    disclosure_policy:
+    - https://github.com/alibaba/disclosure/blob/main/README.md
+    country: China
+    signal_note: listing as a CVE Numbering Authority = participation (a public commitment to assign CVE IDs and
+      publish advisories for its scope); never a count of CVEs
+    detected_by: sweep-vulnerability-disclosure-cna.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: alibaba-first-forum-of-incident-response-and-security-teams
+  label: FIRST (Forum of Incident Response and Security Teams)
+  partner_name: FIRST (Forum of Incident Response and Security Teams)
+  category: Incident response / PSIRT (FIRST member team)
+  type: register
+  channel: standard-directory
+  evidence: https://www.first.org/members/teams/asrc
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: FIRST member teams (api.first.org/data/v1/teams, public JSON API)
+    standard: FIRST (Forum of Incident Response and Security Teams) membership
+    spec_file: null
+    role: first-member-team
+    registered_name: Alibaba Group
+    matched_domain: alibaba.com
+    matched_by: domain
+    teams:
+    - id: asrc
+      team: ASRC
+      team_type: null
+      member_since: December 28, 2017
+      country: CN
+    signal_note: FIRST full membership of an incident-response / product-security team = participation; team_type
+      names CSIRT / PSIRT / SOC; never a count
+    detected_by: sweep-vulnerability-disclosure-cna.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
