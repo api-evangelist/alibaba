@@ -64,26 +64,106 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Alibaba is a multinational technology conglomerate founded in 1999 by Jack Ma, focused on e-commerce, retail, internet, and technology. The company operates major online marketplaces including Taobao, Tmall, and AliExpress, connecting millions of sellers with consumers globally.
+Alibaba is a multinational technology conglomerate founded in 1999 by Jack Ma, focused on e-commerce, retail, internet, and technology. The company operates major online marketplaces including Taobao, Tmall, and AliExpress, connecting millions of sellers with consumers globally. Alibaba Cloud (Aliyun), founded in 2009, is a global leader in cloud computing and artificial intelligence, serving enterprises, developers, and government organizations in more than 200 countries. Alibaba Cloud provides cloud computing, storage, networking, big data, AI/ML, security, and developer services through a comprehensive API ecosystem. The OpenAPI Explorer provides a web interface for discovering, testing, and generating SDK code for hundreds of Alibaba Cloud service APIs. The company also operates Alipay (digital payments), DingTalk (enterprise collaboration), and 1688 (B2B wholesale).
 
-Alibaba Cloud (Aliyun), founded in 2009, is a global leader in cloud computing and artificial intelligence, serving enterprises, developers, and government organizations in more than 200 countries. Alibaba Cloud became the official cloud services partner of the Olympics in January 2017.
+**Areas:** Cloud · Cloud Computing · E-Commerce · Commerce · Artificial Intelligence · Machine Learning · Big Data · Storage · Networking · Serverless · Developer Tools
 
-Alibaba Cloud provides cloud computing, storage, networking, big data, AI/ML, security, and developer services through a comprehensive API ecosystem. The OpenAPI Explorer provides a web interface and WebCLI for discovering, testing, and generating SDK code for hundreds of Alibaba Cloud service APIs across Java, Python, Node.js, PHP, Go, and other languages.
+## Alibaba on APIs.io
 
-## APIs
+Everything profiled for Alibaba is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/alibaba/](https://apis.io/providers/alibaba/)** — or go straight to one of the APIs or properties below.
 
-- **[Alibaba Cloud API](https://api.alibabacloud.com/)** - Comprehensive cloud services API covering ECS, OSS, ACK, RDS, MaxCompute, Function Compute, API Gateway, CDN, and hundreds of additional services
+### APIs (1)
 
-## OpenAPI Specs
+- [Alibaba Cloud API](https://apis.io/apis/alibaba/alibaba-cloud-api/) — Alibaba Cloud provides a comprehensive API ecosystem covering all major cloud services including Elastic Compute Service (ECS), Object Storage Service…
 
-- `openapi/alibaba-openapi.yml` - Alibaba Cloud API specification
+### Published properties
 
-## Links
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- [Alibaba.com](https://www.alibaba.com)
-- [Alibaba Cloud](https://www.alibabacloud.com)
-- [OpenAPI Explorer](https://www.alibabacloud.com/en/product/openapiexplorer)
-- [API Documentation](https://api.alibabacloud.com/)
-- [SDK Documentation](https://www.alibabacloud.com/help/en/sdk/product-overview/alibaba-cloud-sdk)
-- [GitHub - Aliyun](https://github.com/aliyun)
-- [GitHub - Alibaba Cloud Go SDK](https://github.com/alibabacloud-go)
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [Alibaba Cloud OpenAPI MCP Server](https://apis.io/servers/alibaba/alibaba-cloud-openapi-mcp-server/)
+
+#### Collections (1)
+
+Postman and Open Collection request collections.
+
+- [API Collection](https://apis.io/collections/alibaba/open-alibaba/)
+
+#### Overlays (1)
+
+OpenAPI overlays, including conversational phrasing for each operation.
+
+- [Alibaba Openapi Overlay](https://apis.io/overlays/alibaba/alibaba-openapi-overlay/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Alibaba Domain Security](https://apis.io/security/alibaba/alibaba-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.alibaba.com)
+- [Documentation](https://api.alibabacloud.com/)
+- [Pricing](https://www.alibabacloud.com/pricing)
+- [Sign up](https://account.alibabacloud.com/register/intl_register.htm)
+- [Blog](https://www.alizila.com/feed/)
+- [Status](https://status.alibabacloud.com/)
+
+## API Evangelist rating
+
+**Kin Score 19.9** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 71.7 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 21.1 |
+| Developer ergonomics | 19.0 |
+| Access clarity | 23.7 |
+
+**Agent readiness 3.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.0** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/alibaba/](https://apis.io/providers/alibaba/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Alibaba: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/alibaba/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
